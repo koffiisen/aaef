@@ -896,15 +896,16 @@
 
 <script type="text/javascript">
     lightGallery(document.getElementById('lightgallery'));
-    setTimeout(function () {
-        $("#animatedModal")[0].style.display = "block";
-    }, 2000);
-    $("#table_load").click(function () {
-        $("#table_load").animatedModal({
-            animatedIn: 'lightSpeedIn',
-            animatedOut: 'bounceOutDown'
-        });
+
+    $("#table_load").animatedModal({
+        animatedIn: 'lightSpeedIn',
+        animatedOut: 'bounceOutDown'
     });
+
+    $("#table_load").click(function () {
+        $("#animatedModal")[0].style.display = "block";
+    })
+
 </script>
 
 </body>
